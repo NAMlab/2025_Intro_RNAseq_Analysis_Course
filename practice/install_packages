@@ -1,44 +1,11 @@
-# Links for software to install
- 
-https://cloud.r-project.org/
-https://posit.co/download/rstudio-desktop/
-https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
- 
 # Setting up conda
 conda info
 
-#conda config --add channels bioconda
-#conda config --add channels conda-forge
- 
 conda create --name rnaseq
  
  
 # Installing software using conda
-conda install -c bioconda kallisto
+
 conda install -c bioconda fastqc
 conda install -c bioconda multiqc
-conda install -c bioconda trimmomatic
-conda install -c bioconda sra-tools
- 
-# Install Bioconductor
- 
-if (!require("BiocManager", quietly = TRUE))
-  install.packages("BiocManager")
-BiocManager::install(version = "3.20")
- 
-setRepositories()
-
-
-# Prerequisites
-sudo apt install cmake g++ zlib1g-dev libhdf5-dev
-
-# Clone and build kallisto
-git clone https://github.com/pachterlab/kallisto.git
-cd kallisto
-mkdir build
-cd build
-cmake ..
-make
-
-# Use the locally built kallisto binary
-./kallisto index --help
+#conda install -c bioconda kallisto
