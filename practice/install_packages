@@ -27,3 +27,18 @@ if (!require("BiocManager", quietly = TRUE))
 BiocManager::install(version = "3.20")
  
 setRepositories()
+
+
+# Prerequisites
+sudo apt install cmake g++ zlib1g-dev libhdf5-dev
+
+# Clone and build kallisto
+git clone https://github.com/pachterlab/kallisto.git
+cd kallisto
+mkdir build
+cd build
+cmake ..
+make
+
+# Use the locally built kallisto binary
+./kallisto index --help
