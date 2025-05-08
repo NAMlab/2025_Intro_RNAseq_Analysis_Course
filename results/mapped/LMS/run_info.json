@@ -1,0 +1,13 @@
+{
+	"n_targets": 34658,
+	"n_bootstraps": 0,
+	"n_processed": 6373703,
+	"n_pseudoaligned": 4476288,
+	"n_unique": 3985233,
+	"p_pseudoaligned": 70.2,
+	"p_unique": 62.5,
+	"kallisto_version": "0.46.2",
+	"index_version": 10,
+	"start_time": "Tue May  6 19:10:47 2025",
+	"call": "kallisto quant -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index -o mapped/LMS -t 4 --single -l 50 -s 30 data/SRR2006794.fastq.gz"
+}
