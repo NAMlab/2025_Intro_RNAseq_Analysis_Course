@@ -29,14 +29,14 @@ wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR200/008/SRR2006798/SRR200
 
 
 # Get the data (using SRA & sra-tools https://www.ncbi.nlm.nih.gov/sra/)
-fasterq-dump --split-files -O data SRR2006793 && gzip data/SRR2006793_*.fastq
-fasterq-dump --split-files -O data SRR2006797 && gzip data/SRR2006797_*.fastq
-fasterq-dump --split-files -O data SRR2006792 && gzip data/SRR2006792_*.fastq
-fasterq-dump --split-files -O data SRR2006794 && gzip data/SRR2006794_*.fastq
-fasterq-dump --split-files -O data SRR2006791 && gzip data/SRR2006791_*.fastq
-fasterq-dump --split-files -O data SRR2006795 && gzip data/SRR2006795_*.fastq
-fasterq-dump --split-files -O data SRR2006796 && gzip data/SRR2006796_*.fastq
-fasterq-dump --split-files -O data SRR2006798 && gzip data/SRR2006798_*.fastq
+fasterq-dump --split-files -O data SRR2006793 && gzip data/SRR2006793*.fastq
+fasterq-dump --split-files -O data SRR2006797 && gzip data/SRR2006797*.fastq
+fasterq-dump --split-files -O data SRR2006792 && gzip data/SRR2006792*.fastq
+fasterq-dump --split-files -O data SRR2006794 && gzip data/SRR2006794*.fastq
+fasterq-dump --split-files -O data SRR2006791 && gzip data/SRR2006791*.fastq
+fasterq-dump --split-files -O data SRR2006795 && gzip data/SRR2006795*.fastq
+fasterq-dump --split-files -O data SRR2006796 && gzip data/SRR2006796*.fastq
+fasterq-dump --split-files -O data SRR2006798 && gzip data/SRR2006798*.fastq
 
 
 # To direct the output to a specific subdirectory use: wget -nc -P output_subdirectory input_file 
