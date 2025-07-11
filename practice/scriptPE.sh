@@ -14,20 +14,18 @@ mkdir mapped
 
 
 # Get the data (using ENA https://www.ebi.ac.uk/ena/browser/home) 
-wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/027/SRR11855627/SRR11855627_1.fastq.gz
-wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/027/SRR11855627/SRR11855627_2.fastq.gz
-wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/028/SRR11855628/SRR11855628_1.fastq.gz
-wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/028/SRR11855628/SRR11855628_2.fastq.gz
-wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/029/SRR11855629/SRR11855629_1.fastq.gz
-wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/029/SRR11855629/SRR11855629_2.fastq.gz
-wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/030/SRR11855630/SRR11855630_1.fastq.gz
-wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/030/SRR11855630/SRR11855630_2.fastq.gz
-wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/031/SRR11855631/SRR11855631_1.fastq.gz
-wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/031/SRR11855631/SRR11855631_2.fastq.gz
-wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/032/SRR11855632/SRR11855632_1.fastq.gz
-wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/032/SRR11855632/SRR11855632_2.fastq.gz
-
-
+wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/027/SRR11855627/SRR11855627_1.fastq.gz
+wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/027/SRR11855627/SRR11855627_2.fastq.gz
+wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/028/SRR11855628/SRR11855628_1.fastq.gz
+wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/028/SRR11855628/SRR11855628_2.fastq.gz
+wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/029/SRR11855629/SRR11855629_1.fastq.gz
+wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/029/SRR11855629/SRR11855629_2.fastq.gz
+wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/030/SRR11855630/SRR11855630_1.fastq.gz
+wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/030/SRR11855630/SRR11855630_2.fastq.gz
+wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/031/SRR11855631/SRR11855631_1.fastq.gz
+wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/031/SRR11855631/SRR11855631_2.fastq.gz
+wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/032/SRR11855632/SRR11855632_1.fastq.gz
+wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/032/SRR11855632/SRR11855632_2.fastq.gz
 
 # Get the data (using SRA & sra-tools https://www.ncbi.nlm.nih.gov/sra/)
 fasterq-dump --split-files -O data SRR11855627 && gzip data/SRR11855627_*.fastq
@@ -36,10 +34,6 @@ fasterq-dump --split-files -O data SRR11855629 && gzip data/SRR11855629_*.fastq
 fasterq-dump --split-files -O data SRR11855630 && gzip data/SRR11855630_*.fastq
 fasterq-dump --split-files -O data SRR11855631 && gzip data/SRR11855631_*.fastq
 fasterq-dump --split-files -O data SRR11855632 && gzip data/SRR11855632_*.fastq
-
-
-
-# To direct the output to a specific subdirectory use: wget -nc -P output_subdirectory input_file 
 
 
 # first use fastqc to check the quality of our fastq files:
