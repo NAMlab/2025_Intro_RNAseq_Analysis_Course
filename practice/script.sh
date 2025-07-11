@@ -46,6 +46,14 @@ fasterq-dump --split-files -O data SRR2006798 && gzip data/SRR2006798*.fastq
 fastqc data/*.gz -t 8 -o qc
 # to make the output into a subdirectory 'qc' use: fastqc *.gz -t 4 -o qc
 
+# trimm your reads if needed after the qc check: http://www.usadellab.org/cms/?page=trimmomatic
+trimmomatic SE -threads 8 input output \
+ILLUMINACLIP:TruSeq3-SE.fa:2:30:10 \
+HEADCROP:5 \
+SLIDINGWINDOW:4:15 \
+MINLEN:70
+
+
  
 # next, we want to build an index from our reference fasta file 
 # I get my reference mammalian transcriptome files from here: https://useast.ensembl.org/info/data/ftp/index.html
