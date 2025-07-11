@@ -59,7 +59,7 @@ trimmomatic PE -threads 8 data/SRR11855632_1.fastq.gz data/SRR11855632_2.fastq.g
 kallisto index -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index genomes/Solanum_lycopersicum.SL3.0.cdna.all.fa.gz
 
 # first use fastqc to check the quality of the trimmed fastq files:
-fastqc data/*trimmed.fastq.gz -t 4 -o qc
+fastqc data/*trimmed_paired.fastq.gz -t 4 -o qc
 
 # now map reads to the indexed reference transcriptome (cdna) 
 
