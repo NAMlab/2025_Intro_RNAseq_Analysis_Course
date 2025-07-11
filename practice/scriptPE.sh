@@ -13,14 +13,6 @@ mkdir genomes
 mkdir mapped
 
 
-SRR11855627
-SRR11855628
-SRR11855629
-SRR11855630
-SRR11855631
-SRR11855632
-
-
 # Get the data (using ENA https://www.ebi.ac.uk/ena/browser/home) 
 wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/027/SRR11855627/SRR11855627_1.fastq.gz
 wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/027/SRR11855627/SRR11855627_2.fastq.gz
