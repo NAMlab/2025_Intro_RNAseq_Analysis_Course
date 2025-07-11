@@ -53,6 +53,14 @@ HEADCROP:5 \
 SLIDINGWINDOW:4:15 \
 MINLEN:70
 
+trimmomatic SE -threads 8 data/SRR2006793.fastq.gz data/SRR2006793_trimmed.fastq.gz ILLUMINACLIP:adapters/TruSeq3-SE.fa:2:30:10 HEADCROP:5 SLIDINGWINDOW:4:15 MINLEN:30
+trimmomatic SE -threads 8 data/SRR2006797.fastq.gz data/SRR2006797_trimmed.fastq.gz ILLUMINACLIP:adapters/TruSeq3-SE.fa:2:30:10 HEADCROP:5 SLIDINGWINDOW:4:15 MINLEN:30
+trimmomatic SE -threads 8 data/SRR2006792.fastq.gz data/SRR2006792_trimmed.fastq.gz ILLUMINACLIP:adapters/TruSeq3-SE.fa:2:30:10 HEADCROP:5 SLIDINGWINDOW:4:15 MINLEN:30
+trimmomatic SE -threads 8 data/SRR2006794.fastq.gz data/SRR2006794_trimmed.fastq.gz ILLUMINACLIP:adapters/TruSeq3-SE.fa:2:30:10 HEADCROP:5 SLIDINGWINDOW:4:15 MINLEN:30
+trimmomatic SE -threads 8 data/SRR2006791.fastq.gz data/SRR2006791_trimmed.fastq.gz ILLUMINACLIP:adapters/TruSeq3-SE.fa:2:30:10 HEADCROP:5 SLIDINGWINDOW:4:15 MINLEN:30
+trimmomatic SE -threads 8 data/SRR2006795.fastq.gz data/SRR2006795_trimmed.fastq.gz ILLUMINACLIP:adapters/TruSeq3-SE.fa:2:30:10 HEADCROP:5 SLIDINGWINDOW:4:15 MINLEN:30
+trimmomatic SE -threads 8 data/SRR2006796.fastq.gz data/SRR2006796_trimmed.fastq.gz ILLUMINACLIP:adapters/TruSeq3-SE.fa:2:30:10 HEADCROP:5 SLIDINGWINDOW:4:15 MINLEN:30
+trimmomatic SE -threads 8 data/SRR2006798.fastq.gz data/SRR2006798_trimmed.fastq.gz ILLUMINACLIP:adapters/TruSeq3-SE.fa:2:30:10 HEADCROP:5 SLIDINGWINDOW:4:15 MINLEN:30
 
  
 # next, we want to build an index from our reference fasta file 
