@@ -17,7 +17,7 @@ mkdir genomes
 mkdir mapped
 
 
-# Get the data
+# Get the data (using ENA https://www.ebi.ac.uk/ena/browser/home) 
 wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR200/003/SRR2006793/SRR2006793.fastq.gz
 wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR200/007/SRR2006797/SRR2006797.fastq.gz
 wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR200/002/SRR2006792/SRR2006792.fastq.gz
@@ -26,6 +26,17 @@ wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR200/001/SRR2006791/SRR200
 wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR200/005/SRR2006795/SRR2006795.fastq.gz
 wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR200/006/SRR2006796/SRR2006796.fastq.gz
 wget -nc -P data ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR200/008/SRR2006798/SRR2006798.fastq.gz
+
+
+# Get the data (using SRA & sra-tools https://www.ncbi.nlm.nih.gov/sra/)
+fasterq-dump --split-files --gzip -O data SRR2006793
+fasterq-dump --split-files --gzip -O data SRR2006797
+fasterq-dump --split-files --gzip -O data SRR2006792
+fasterq-dump --split-files --gzip -O data SRR2006794
+fasterq-dump --split-files --gzip -O data SRR2006791
+fasterq-dump --split-files --gzip -O data SRR2006795
+fasterq-dump --split-files --gzip -O data SRR2006796
+fasterq-dump --split-files --gzip -O data SRR2006798
 
 
 # To direct the output to a specific subdirectory use: wget -nc -P output_subdirectory input_file 
