@@ -2,8 +2,8 @@
 conda info
  
 conda config --add channels conda-forge
-conda config --remove defaults
-conda config --remove bioconda
+conda config --remove channels defaults
+conda config --remove channels bioconda
 
 conda create --name rnaseq
 conda activate rnaseq
