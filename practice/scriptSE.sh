@@ -66,14 +66,14 @@ fastqc data/*trimmed.fastq.gz -t 4 -o qc
  
 # now map reads to the indexed reference transcriptome (cdna)
 
-kallisto quant -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index -o mapped -t 4 --single -l 50 -s 30 data/SRR2006793_trimmed.fastq.gz
-kallisto quant -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index -o mapped -t 4 --single -l 50 -s 30 data/SRR2006797_trimmed.fastq.gz
-kallisto quant -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index -o mapped -t 4 --single -l 50 -s 30 data/SRR2006792_trimmed.fastq.gz
-kallisto quant -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index -o mapped -t 4 --single -l 50 -s 30 data/SRR2006794_trimmed.fastq.gz
-kallisto quant -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index -o mapped -t 4 --single -l 50 -s 30 data/SRR2006791_trimmed.fastq.gz
-kallisto quant -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index -o mapped -t 4 --single -l 50 -s 30 data/SRR2006795_trimmed.fastq.gz
-kallisto quant -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index -o mapped -t 4 --single -l 50 -s 30 data/SRR2006796_trimmed.fastq.gz
-kallisto quant -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index -o mapped -t 4 --single -l 20 -s 30 data/SRR2006798_trimmed.fastq.gz
+kallisto quant -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index -o mapped/SRR2006793 -t 4 --single -l 50 -s 30 data/SRR2006793_trimmed.fastq.gz
+kallisto quant -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index -o mapped/SRR2006797 -t 4 --single -l 50 -s 30 data/SRR2006797_trimmed.fastq.gz
+kallisto quant -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index -o mapped/SRR2006792 -t 4 --single -l 50 -s 30 data/SRR2006792_trimmed.fastq.gz
+kallisto quant -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index -o mapped/SRR2006794 -t 4 --single -l 50 -s 30 data/SRR2006794_trimmed.fastq.gz
+kallisto quant -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index -o mapped/SRR2006791 -t 4 --single -l 50 -s 30 data/SRR2006791_trimmed.fastq.gz
+kallisto quant -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index -o mapped/SRR2006795 -t 4 --single -l 50 -s 30 data/SRR2006795_trimmed.fastq.gz
+kallisto quant -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index -o mapped/SRR2006796 -t 4 --single -l 50 -s 30 data/SRR2006796_trimmed.fastq.gz
+kallisto quant -i genomes/Solanum_lycopersicum.SL3.0.cdna.all.index -o mapped/SRR2006798 -t 4 --single -l 20 -s 30 data/SRR2006798_trimmed.fastq.gz
  
 
  
