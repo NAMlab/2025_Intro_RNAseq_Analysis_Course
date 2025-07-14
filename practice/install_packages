@@ -1,5 +1,8 @@
 # Setting up conda
 conda info
+ 
+conda config --add channels bioconda
+conda config --add channels conda-forge
 
 conda create --name rnaseq
 conda activate rnaseq
