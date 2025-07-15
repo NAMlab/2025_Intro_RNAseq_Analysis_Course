@@ -1,0 +1,9 @@
+ID	directory	tissue	treatment	genotype
+SRR2006793	LMC	leaf	control	mutant
+SRR2006797	AMC	anther	control	mutant
+SRR2006792	LWS	leaf	stress	wt
+SRR2006794	LMS	leaf	stress	mutant
+SRR2006791	LWC	leaf	control	wt
+SRR2006795	AWC	anther	control	wt
+SRR2006796	AWS	anther	stress	wt
+SRR2006798	AMS	anther	stress	mutant
